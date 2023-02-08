@@ -8,4 +8,16 @@ RSpec.describe 'Dealership' do
 
    expect(dealership).to be_a Dealership
   end
+
+  it 'has inventory' do
+    dealership = Dealership.new("Acme Auto", "123 Main Streat")
+    
+    expect(dealership.inventory).to eq([])
+  end
+
+  it 'has inventory count' do
+    dealership = Dealership.new("Acme Auto", "123 Main Streat")
+    
+    expect(dealership.inventory_count).to be 0
+  end
 end
