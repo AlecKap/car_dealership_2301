@@ -18,4 +18,8 @@ attr_reader :monthly_payment, :loan_length, :color
   def total_cost
     (@loan_length * @monthly_payment)
   end
+
+  def paint!(new_color)
+    @color = new_color
+  end
 end
