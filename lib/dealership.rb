@@ -15,4 +15,10 @@ class Dealership
   def add_car(car)
     @inventory << car
   end
+
+  def has_inventory?
+    if @inventory.empty? == true
+      return false
+    end
+  end
 end
