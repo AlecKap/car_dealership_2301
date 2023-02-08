@@ -19,6 +19,8 @@ class Dealership
   def has_inventory?
     if @inventory.empty? == true
       return false
+    else
+      return true
     end
   end
 end
