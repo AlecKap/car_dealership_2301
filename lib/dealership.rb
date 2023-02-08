@@ -23,4 +23,12 @@ class Dealership
       return true
     end
   end
+
+  def cars_by_make(type)
+    sorted_cars = []
+    sorted_cars = @inventory.select do |car|
+      sorted_cars << car if car.make == type
+    end
+    sorted_cars
+  end
 end
